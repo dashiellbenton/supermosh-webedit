@@ -5,32 +5,26 @@ import { Home } from "./Home";
 import { Studio } from "./Studio";
 
 export const App = () => {
-  const match = useMatch("/studio");
+  const inStudio = useMatch("/studio");
   return (
     <>
-      <nav>
-        <Link to="/" className="link-button">
-          <Icon name="home" /> <span className="no-mobile">Home</span>
-        </Link>
-        <Link to="/studio" className="link-button">
-          <Icon name="movie" /> <span className="no-mobile">Studio</span>
-        </Link>
-        <a
-          href="https://github.com/supermosh/supermosh.github.io"
-          className="link-button"
-        >
-          <Icon name="data_object" /> <span className="no-mobile">Github</span>
-        </a>
-        {match && (
+      {!inStudio && (
+        <nav>
+          <Link to="/" className="link-button">
+            <Icon name="home" /> <span className="no-mobile">Home</span>
+          </Link>
+          <Link to="/studio" className="link-button">
+            <Icon name="movie" /> <span className="no-mobile">Studio</span>
+          </Link>
           <a
-            href="https://github.com/supermosh/supermosh.github.io/issues"
+            href="https://github.com/supermosh/supermosh.github.io"
             className="link-button"
           >
-            <Icon name="bug_report" />{" "}
-            <span className="no-mobile">Report a bug</span>
+            <Icon name="data_object" />{" "}
+            <span className="no-mobile">Github</span>
           </a>
-        )}
-      </nav>
+        </nav>
+      )}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/studio" element={<Studio />} />
