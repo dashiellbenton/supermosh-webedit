@@ -8,7 +8,7 @@ Datamoshing is one of the most sought-after video glitch effect, but demands com
 
 Supermosh brings datamoshing capabilities to everyone through a free web-based editor, allowing anyone to glitch their images and videos.
 
-[⏯️ Try it out](https://supermosh.github.io/)
+[⏯️ Try it out](https://dashiellbenton.github.io/supermosh-webedit)
 
 [📺 Watch the tutorial](https://youtu.be/M1OCjF-aJyo)
 
